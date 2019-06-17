@@ -1,11 +1,11 @@
-# kitti2pcl
-Converting Velodyne scans to PCD files in KITTI dataset.
+# pcl_bb_view
+View pcd files and corresponding bounding boxes.
 
 ```
 $ mkdir build
 $ cd build
 $ cmake ..
 $ make
-$ ./velo2pcd --folder DIR/TO/VELODYNE/SEQUENCE
+$ ./pcl_bb_view <path_to_pcd_file(s)>
 ```
 

@@ -59,6 +59,7 @@ int main(int argc, char **argv)
 	viewer->setShapeRenderingProperties(pcl::visualization::PCL_VISUALIZER_REPRESENTATION, pcl::visualization::PCL_VISUALIZER_REPRESENTATION_WIREFRAME, "OBB");
 
 	// Bounding box setup
+	// TODO: Setup bounding box based on user input
 	pcl::PointXYZ center(mass_center(0), mass_center(1), mass_center(2));
 	pcl::PointXYZ x_axis(major_vector(0) + mass_center(0), major_vector(1) + mass_center(1), major_vector(2) + mass_center(2));
 	pcl::PointXYZ y_axis(middle_vector(0) + mass_center(0), middle_vector(1) + mass_center(1), middle_vector(2) + mass_center(2));
