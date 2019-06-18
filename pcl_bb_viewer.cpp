@@ -67,7 +67,10 @@ int main(int argc, char **argv)
 	// load pcd file
 	pcl::PointCloud<pcl::PointXYZ>::Ptr cloud(new pcl::PointCloud<pcl::PointXYZ>());
 	if (pcl::io::loadPCDFile(argv[1], *cloud) == -1)
-		return (-1);
+	{
+		std::cout << "ERROR: pcd file is empty!" << std::endl;
+		return (0);
+	}
 
 	// Viewer setup
 	pcl::visualization::PCLVisualizer::Ptr viewer(new pcl::visualization::PCLVisualizer("3D Viewer"));
