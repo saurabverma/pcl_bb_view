@@ -113,7 +113,7 @@ int main(int argc, char **argv)
 					long l = stof(vec[5]);
 					long t = stof(vec[6]);
 
-					// Variable setup
+					// Center pose setup
 					Eigen::Vector3f position(x, y, z);
 					Eigen::Quaternionf orientation;
 					orientation = Eigen::AngleAxisf(0.0, Eigen::Vector3f::UnitX()) * Eigen::AngleAxisf(0.0, Eigen::Vector3f::UnitY()) * Eigen::AngleAxisf(t, Eigen::Vector3f::UnitZ()); // Euler 2 Quat
